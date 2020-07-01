@@ -1,28 +1,31 @@
 {
-  "name": "testcafe-testing",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lidiia92/testcafe-testing.git"
-  },
-  "keywords": [
-    "TestCafe",
-    "Testing",
-    "Automation"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Lidiia92/testcafe-testing/issues"
-  },
-  "homepage": "https://github.com/Lidiia92/testcafe-testing#readme",
-  "dependencies": {
-    "prettier": "^2.0.5",
-    "testcafe": "^1.8.7"
-  }
+	"name": "testcafe-testing",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test:chrome": "testcafe chrome ./tests",
+		"test:firefox": "testcafe firefox ./tests",
+		"test:chrome:headless": "testcafe chrome:headless ./tests",
+		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Lidiia92/testcafe-testing.git"
+	},
+	"keywords": [
+		"TestCafe",
+		"Testing",
+		"Automation"
+	],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Lidiia92/testcafe-testing/issues"
+	},
+	"homepage": "https://github.com/Lidiia92/testcafe-testing#readme",
+	"dependencies": {
+		"prettier": "^2.0.5",
+		"testcafe": "^1.8.7"
+	}
 }
