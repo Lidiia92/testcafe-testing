@@ -6,8 +6,9 @@
 	"scripts": {
 		"test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
 		"test:firefox": "testcafe firefox ./tests",
-		"test:chrome:headless": "testcafe chrome:headless ./tests -s takeOnFails=true",
-		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests"
+		"test:chrome:headless": "testcafe chrome:headless ./tests",
+		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests",
+		"v": "node -v"
 	},
 	"repository": {
 		"type": "git",
@@ -25,6 +26,7 @@
 	},
 	"homepage": "https://github.com/Lidiia92/testcafe-testing#readme",
 	"dependencies": {
+		"node": "10.21.0",
 		"prettier": "^2.0.5",
 		"testcafe": "^1.8.7"
 	}
