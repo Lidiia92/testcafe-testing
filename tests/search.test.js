@@ -1,4 +1,5 @@
 import { Selector } from 'testcafe';
+import xPathToCss from 'xpath-to-css';
 
 // prettier-ignore
 fixture `Send Forgotten Password Test`
@@ -9,6 +10,10 @@ test('User can search for information using search box', async (t) => {
 	const searchBox = Selector('#searchTerm');
 	const resultsTitle = Selector('h2');
 	const linkText = Selector('div').innerText;
+
+	//XPATH
+	const xPath = `xpath example`;
+	const css = xPathToCss(xPath);
 
 	//Actions
 	await t.typeText(searchBox, 'online bank', { paste: true });
