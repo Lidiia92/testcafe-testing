@@ -7,6 +7,9 @@ class LoginPage {
 		this.userPassword = Selector('#user_password');
 		this.submitButton = Selector('.btn-primary');
 		this.errorMessage = Selector('.alert-error');
+		this.forgottenPasswordLink = Selector('a').withText(
+			'Forgot your password ?'
+		);
 	}
 
 	async loginToApp(username, password) {
