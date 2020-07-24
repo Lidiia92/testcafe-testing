@@ -7,7 +7,7 @@
 		"test:chrome": "testcafe chrome ./tests -s takeOnFails=true",
 		"test:chrome:5": "testcafe -c chrome 5 chrome ./tests",
 		"test:firefox": "testcafe firefox ./tests",
-		"test:chrome:headless": "testcafe chrome:headless ./tests",
+		"test:chrome:headless": "testcafe chrome:headless ./tests/login.test.js",
 		"test:chrome:headless:5": "testcafe -c chrome 5 chrome:headless ./tests",
 		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests",
 		"v": "node -v",

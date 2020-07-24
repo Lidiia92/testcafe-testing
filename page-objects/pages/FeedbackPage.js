@@ -1,5 +1,5 @@
 import { Selector, t } from 'testcafe';
-import BasePage from '../page-objects/pages/BasePage';
+import BasePage from './BasePage';
 
 class FeedbackPage extends BasePage {
 	constructor() {
