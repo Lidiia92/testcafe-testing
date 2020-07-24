@@ -12,6 +12,7 @@
 		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests",
 		"v": "node -v",
 		"test:multiple": "testcafe chrome,firefox ./tests",
+		"start-jenkins": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
 		"test:percy": "set PERCY_TOKEN=05adbe49a68742c1e57d8185f72742d426739598ffc81b5790748f4188dd6854 && percy exec -- testcafe chrome ./tests/percy.test.js"
 	},
 	"repository": {
