@@ -11,7 +11,8 @@
 		"test:chrome:headless:5": "testcafe -c chrome 5 chrome:headless ./tests",
 		"test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests",
 		"v": "node -v",
-		"test:multiple": "testcafe chrome,firefox ./tests"
+		"test:multiple": "testcafe chrome,firefox ./tests",
+		"test:percy": "set PERCY_TOKEN=05adbe49a68742c1e57d8185f72742d426739598ffc81b5790748f4188dd6854 && percy exec -- testcafe chrome ./tests/percy.test.js"
 	},
 	"repository": {
 		"type": "git",
@@ -29,6 +30,7 @@
 	},
 	"homepage": "https://github.com/Lidiia92/testcafe-testing#readme",
 	"dependencies": {
+		"@percy/testcafe": "^0.2.0",
 		"node": "10.21.0",
 		"prettier": "^2.0.5",
 		"testcafe": "^1.8.7"
