@@ -3,11 +3,12 @@ import BasePage from './BasePage';
 
 class FeedbackPage extends BasePage {
 	constructor() {
-		this.form_name = Selector('#name');
-		this.form_email = Selector('#email');
-		this.form_subject = Selector('#subject');
-		this.form_comment = Selector('#comment');
-		this.form_submit = Selector('input').withAttribute(
+		super();
+		this.formName = Selector('#name');
+		this.formEmail = Selector('#email');
+		this.formSubject = Selector('#subject');
+		this.formComment = Selector('#comment');
+		this.formSubmit = Selector('input').withAttribute(
 			'value',
 			'Send Message'
 		);

@@ -13,13 +13,13 @@ test('User can submit feedback via form', async (t) => {
 
 	//Actions
 	await t.click(linkToFeedback);
-	await t.typeText(feedbackPage.form_name, 'Test', { paste: true });
-	await t.typeText(feedbackPage.form_email, 'test@gmail.com', {
+	await t.typeText(feedbackPage.formName, 'Test', { paste: true });
+	await t.typeText(feedbackPage.formEmail, 'test@gmail.com', {
 		paste: true,
 	});
-	await t.typeText(feedbackPage.form_subject, 'Test', { paste: true });
-	await t.typeText(feedbackPage.form_comment, 'Test', { paste: true });
-	await t.click(feedbackPage.form_submit);
+	await t.typeText(feedbackPage.formSubject, 'Test', { paste: true });
+	await t.typeText(feedbackPage.formComment, 'Test', { paste: true });
+	await t.click(feedbackPage.formSubmit);
 
 	//Assertions
 	await t
