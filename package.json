@@ -14,7 +14,8 @@
 		"test:multiple": "testcafe chrome,firefox ./tests",
 		"start-jenkins": "java -jar jenkins.war -httpPort=8080 --enable-future-java",
 		"test:percy": "set PERCY_TOKEN=05adbe49a68742c1e57d8185f72742d426739598ffc81b5790748f4188dd6854 && percy exec -- testcafe chrome ./tests/percy.test.js",
-		"test:reporter:json": "testcafe chrome:headless ./tests --reporter json"
+		"test:reporter:json": "testcafe chrome:headless ./tests --reporter json",
+		"test:reporter:xunit": "testcafe chrome:headless ./tests --reporter xunit"
 	},
 	"repository": {
 		"type": "git",
@@ -36,7 +37,8 @@
 		"node": "10.21.0",
 		"prettier": "^2.0.5",
 		"testcafe": "^1.8.7",
-		"testcafe-reporter-json": "^2.2.0"
+		"testcafe-reporter-json": "^2.2.0",
+		"testcafe-reporter-xunit": "^2.1.0"
 	},
 	"devDependencies": {
 		"xpath-to-css": "^1.0.5"
